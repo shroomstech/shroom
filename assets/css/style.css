@@ -1,0 +1,26 @@
+:root {
+    background-color: rgb(39, 60, 86);
+    color: white;
+    font-family: pixel;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(../fonts/PixelifySans-Regular.ttf);
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover {
+    color:white;
+    text-decoration: underline;
+}
+
+.hidden {
+    color: rgb(39, 60, 86);
+    background-color: rgb(39, 60, 86);
+    border: 0px;
+}
