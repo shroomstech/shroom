@@ -12,10 +12,10 @@
 body {
   color: var(--text);
   background:
-    linear-gradient(180deg, rgba(0,0,0,0.58), rgba(0,0,0,0.9)),
-    url("../images/background3.jpg") no-repeat center center fixed;
+    linear-gradient(rgba(0, 0, 0, 0.519), rgba(0, 0, 0, 0.519)),
+    url("../images/background4.jpg") no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Pixel', sans-serif;
+  font-family: 'Pixel', sans-serif;
 }
 
 @font-face {
@@ -28,9 +28,8 @@ body {
 .header,
 .navbar-top,
 .footer,
-.welcome,
-.creator-card {
-  background: var(--glass);
+.welcome {
+  background: linear-gradient(rgba(0, 0, 0, 0.364), rgba(0, 0, 0, 0.364));
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }

@@ -25,7 +25,7 @@
   transform: translateY(-50%);
 
   width: 170px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.08));
+  background: linear-gradient(rgba(0, 0, 0, 0.364), rgba(0, 0, 0, 0.364));
   border: 1px solid rgba(132, 131, 131, 0.2);
   border-left: none;
   box-shadow: 0 30px 70px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.05);
