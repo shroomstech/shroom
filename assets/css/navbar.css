@@ -1,0 +1,61 @@
+/* =========================
+   Modern Responsive Navbar
+   ========================= */
+.nbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.nav-row strong {
+    color: #74c0fc;
+    margin-right: 5px;
+}
+
+.nbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.nbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Mobile Optimierung */
+@media (max-width: 768px) {
+    .nbar {
+        gap: 8px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .nbar a {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+}

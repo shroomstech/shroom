@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before You Enter</title>
+    <link rel="stylesheet" href="https://unpkg.com/7.css@0.21.1/dist/7.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+</head>
+<body>
+
+<article class="welcome">
+<div>
+    <h2 style="text-align: center; margin-bottom: 25px;">Before You Enter</h2>
+    <br>
+
+    <p style="text-align: center; line-height: 1.5; max-width: 720px; margin: 0 auto 25px auto; font-size: 16.5px;">
+        This website is rated 
+        <a href="https://www.mabsland.com/Adoption.html"><img src="assets/images/button/ratings/Censor_14c.gif" alt="14c"></a>
+    </p>
+
+    <p style="text-align: center; line-height: 1.7; max-width: 700px; margin: 0 auto 30px auto; font-size: 16.5px;">
+        it may contain swearing (Mild), crude humor, and content that is 
+        <strong>not suitable for kids under 13 years old</strong>.<br><br>
+        this website has Downloads that may "Brick" the PC theyre Avoidable by Reading the text between (This)
+    </p>
+
+    <p style="text-align: center;">
+        Please Enter if you Have Read Warning
+    </p>
+
+    <!-- Main Enter Button -->
+    <p style="text-align: center; margin: 10px auto 40px auto;">
+        <a href="assets/tabs/index.html">
+            <button>
+                Enter
+            </button>
+        </a>
+    </p>
+
+    <p style="text-align: center;">
+        The Button Below shows a list with current Problems of this website
+    </p>
+
+    <!-- Main Enter Button -->
+    <p style="text-align: center; margin: 10px auto 40px auto;">
+        <a href="assets/tabs/problems.html">
+            <button>
+                Visit Problems List
+            </button>
+        </a>
+    </p>  
+
+</div>
+</article>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shroom32web - Downloads</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <link rel="stylesheet" href="../css/style.css" id="theme-css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .download-card {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .download-card h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: #ffffff;
+            font-size: 1.1rem;
+        }
+        .download-card p {
+            margin: 5px 0 10px 0;
+            color: #ccc;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        .badge {
+            font-size: 0.8rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 8px;
+        }
+        .badge-safe { background: #1b4d1b; color: #51cf66; }
+        .badge-preview { background: #4d4d1b; color: #ffd43b; }
+        .badge-beta { background: #4d331b; color: #ffa94d; }
+        .badge-exp { background: #4d1b1b; color: #ff6b6b; }
+        .badge-unstable { background: #3d0a0a; color: #ff8787; }
+        
+        .download-btn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+        .download-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            border-color: #fff;
+            text-decoration: none;
+        }
+        .category-title {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 5px;
+            margin: 25px 0 15px 0;
+            text-align: left;
+            color: #74c0fc;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header" style="width: auto; text-align: center;">
+    <h4 class="webtitle" style="width: 150px; text-align: center;"><a href="index.html" style="color: white;">Shroom32web</a></h4>
+</header>
+
+<main>
+    <section>
+        <article class="welcome">
+
+            <header class="cheedder" id="top">
+                <h1 style="flex: auto;" class="cheedder">
+                    Downloads Page
+                </h1>
+            </header>
+
+            <div>
+                <h3 style="text-align: center;">Navigation</h3>
+            </div><br>
+
+<div class="nbar">
+    <div class="nav-row">
+        <strong>Main:</strong>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="downloads.html"><i class="fa-solid fa-cloud"></i> Downloads</a>
+        <a href="problems.html"><i class="fa-solid fa-triangle-exclamation"></i> Problems</a>
+    </div>
+    <div class="nav-row">
+        <strong>Links:</strong>
+        <a href="https://github.com/shroomstech"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://discord.gg/7nXzYNXKKa"><i class="fa-brands fa-discord"></i> Discord</a>
+    </div>
+    <div class="nav-row">
+        <strong>Others:</strong>
+        <a href="https://forum.frutigeraeroarchive.org/"><i class="fa-solid fa-rss"></i> FAA Forum</a>
+        <a href="mailto:aeroxptech@gmail.com"><i class="fa-solid fa-envelope"></i> Contact</a>
+        <a href="https://frutigeraeroarchive.org/aero_webring"><i class="fa online fa-globe"></i> FAA Webring</a>
+    </div>
+</div><br>
+
+            <p style="text-align: center; line-height: 1.5; max-width: 700px; margin: 0 auto 25px auto;">
+                Welcome to the Downloads Page! Here are some custom builds, packages, and system utilities.
+            </p>
+
+            <div style="max-width: 750px; margin: 0 auto;">
+                
+                <!-- CursedOS Project -->
+                <h3 class="category-title"><i class="fa-solid fa-terminal"></i> CursedOS Project</h3>
+
+                <div class="download-card">
+                    <h3>CursePM <span class="badge badge-safe">Safe / Meh</span></h3>
+                    <p>A package manager built entirely from scratch, heavily inspired by the spirit of Gentoo and Bedrock Linux. It gets the job done, but let's be honest—it's safe, yet a bit "meh".</p>
+                    <a class="download-btn" href="https://github.com/shroomstech/curse"><i class="fa-brands fa-github"></i> Download on GitHub</a>
+                </div>
+
+                <div class="download-card">
+                    <h3>DSInitRC <span class="badge badge-preview">Preview</span></h3>
+                    <p>A scratch-made init system written in C, specifically crafted and customized for the CursedOS project.</p>
+                    <a class="download-btn" href="https://github.com/shroomstech/DsinitRC"><i class="fa-brands fa-github"></i> Download on GitHub</a>
+                </div>
+
+                <div class="download-card">
+                    <h3>CursedOS <span class="badge badge-beta">Beta</span></h3>
+                    <p>An independent Linux distribution running <code>DsInitRC</code> as its main init system. Currently ships without a default DE/WM and is notoriously difficult to set up because it uses the exact same hardcore installation process as Gentoo.</p>
+                    <a class="download-btn" href="https://github.com/shroomstech/CursedOS"><i class="fa-brands fa-github"></i> Download on GitHub</a>
+                </div>
+
+
+                <!-- Other Stuff -->
+                <h3 class="category-title"><i class="fa-solid fa-box-archive"></i> Other Stuff</h3>
+
+                <div class="download-card">
+                    <h3>DuckyFS <span class="badge badge-exp">Experimental</span></h3>
+                    <p>An experimental custom Linux File System (LFS) layout.</p>
+                    <a class="download-btn" href="https://github.com/shroomstech/DuckyFS"><i class="fa-brands fa-github"></i> Download on GitHub</a>
+                </div>
+
+                <div class="download-card">
+                    <h3>DuckyWM <span class="badge badge-unstable">Unstable</span></h3>
+                    <p>A custom window maker built specifically for X11 environments.</p>
+                    <a class="download-btn" href="https://github.com/shroomstech/DuckyWM"><i class="fa-brands fa-github"></i> Download on GitHub</a>
+                </div>
+
+
+                <!-- KDE Plasma Stuff -->
+                <h3 class="category-title"><i class="fa-solid fa-palette"></i> KDE Plasma Stuff</h3>
+
+                <div class="download-card">
+                    <h3>Phosphorus Breeze <span class="badge badge-safe">KDE Only</span></h3>
+                    <p>A custom color scheme designed exclusively for KDE Plasma environments.</p>
+                    <a class="download-btn" href="../resources/PhosphorusBreeze.colors"><i class="fa-solid fa-download"></i> Download .colors File</a>
+                </div>
+
+            </div>
+
+<br><br>
+<div>
+<footer class="footer">
+    Made By Shroom | 2026/27
+</footer>
+</div>
+        </article>
+    </section>
+</main>
+
+<script src="../javascript/script.js"></script>
+</body>
+</html>
