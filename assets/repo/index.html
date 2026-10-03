@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shroom32web - Downloads</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <link rel="stylesheet" href="../css/style.css" id="theme-css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Header (Global CSS) -->
+<header class="header-global">
+    <h4 class="webtitle"><a href="index.html">Shroom32web</a></h4>
+</header>
+
+<!-- Main Layout (Global CSS) -->
+<div class="page-layout">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar-nav">
+        <div style="text-align: center; margin-bottom: 15px; color: white;">
+            <strong>Navigation</strong>
+        </div>
+
+        <div class="nbar">
+
+                <strong>Main:</strong>
+                <a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="../downloads/index.html"><i class="fa-solid fa-download"></i> Downloads</a>
+                <a href="repo.html"><i class="fa-solid fa-folder"></i> Repo</a>
+                <strong>Links:</strong>
+                <a href="https://github.com/shroomstech"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://discord.gg/7nXzYNXKKa"><i class="fa-brands fa-discord"></i> Discord</a>
+                <strong>Others:</strong>
+                <a href="https://alnix.org/"><i class="fa-solid fa-computer"></i> Alnix</a>
+                <a href="mailto:aeroxptech@gmail.com"><i class="fa-solid fa-envelope"></i> Contact</a>
+                <a href="https://frutigeraeroarchive.org/aero_webring"><i class="fa online fa-globe"></i> FAAWR</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section>
+            <article>
+                <header id="top" style="margin-bottom: 15px;">
+                    <h1 style="margin: 0; font-size: 1.8rem; color: white;">
+                        Repository Page
+                    </h1>
+                </header>
+
+                <p style="line-height: 1.5; margin-bottom: 25px; color: #ccc;">
+                    Welcome to the Repository Page! Here is a Tutorial on How to add the Curse Repository to your Current Arch installation<br><br>
+                    follow these steps<br>
+                    <code>
+                    1. sudo nano /etc/pacman.conf
+                    <br>
+                    2. add this section below<br>
+                    [curse]<br>
+                    SigLevel = Optional TrustAll<br>
+                    Server = https://raw.githubusercontent.com/shroomstech/curse-packages/main/$arch
+                    <br>
+                    3. sudo pacman -Syu
+                    <br>
+                    4. sudo pacman -Sl curse
+                    </code><br>
+                    and there you have it the Curse Repository
+                </p>
+
+
+                
+                <div>
+                    <footer style="text-align: left; padding: 10px 0; color: #aaa; font-size: 0.9rem;">
+                        Made By Shroom | 2026/27
+                    </footer>
+                </div>
+            </article>
+        </section>
+    </main>
+
+</div>
+<style>
+    code {
+        background-color: rgba(0, 0, 0, 0.237);
+    }
+</style>
+<script src="../javascript/script.js"></script>
+</body>
+</html>
