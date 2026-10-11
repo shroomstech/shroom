@@ -165,6 +165,7 @@ body {
 .badge-exp { background: #4d1b1b; color: #ff6b6b; }
 .badge-unstable { background: #3d0a0a; color: #ff8787; }
 .badge-pre { background: #2f753b; color: #51cf66; }
+.badge-no { background: grey; color: rgb(221, 221, 221);}
 
 .download-btn {
     display: inline-block;

@@ -1,0 +1,1 @@
+                        <a class="download-btn" href="https://github.com/shroomstech/CursedOS"><i class="fa-brands fa-github"></i> Download on GitHub</a>
