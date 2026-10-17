@@ -1,4 +1,4 @@
-name: Publish website to GitHub Pages
+name: Publish website to Pages
 
 on:
   push:
@@ -29,6 +29,7 @@ jobs:
         run: |
           mkdir _site
           cp -a assets/. _site/
+          cp index.html _site/index.html
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
