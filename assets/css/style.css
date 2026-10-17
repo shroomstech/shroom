@@ -20,7 +20,7 @@ body {
   color: var(--text);
   background:
     linear-gradient(rgba(0, 0, 0, 0.519), rgba(0, 0, 0, 0.519)),
-    url("../images/background4.jpg") no-repeat center center fixed;
+    url("../images/Turbines-By-GretagenZETA.png") no-repeat center center fixed;
   background-size: cover;
   font-family: 'Pixel', sans-serif;
   min-height: 100vh;
