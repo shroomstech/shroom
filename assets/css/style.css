@@ -81,6 +81,7 @@ body {
   flex-shrink: 0;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  top: 100%;
 }
 
 .sidebar-nav .nbar .nav-row {
