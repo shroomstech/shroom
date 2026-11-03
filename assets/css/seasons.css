@@ -1,4 +1,4 @@
-/* Helloween Theme */
+/* Helloween Theme
 :root {
   --bg: #100811;
   --text: #fff4e6;
@@ -269,10 +269,10 @@ body {
   );
   text-align: center;
 }
-
+*/
 
 /* Christmas Theme */
-/*
+
 :root {
   --bg: #090811;
   --text: #e6f5ff;
@@ -542,4 +542,4 @@ body {
     #0d0aa5 100%
   );
   text-align: center;
-}*/
+}
