@@ -7,7 +7,12 @@
   --border: rgba(255,255,255,0.14);
 
   --shadow: 0 10px 35px rgba(0,0,0,0.22);
-  cursor: url(../images/cursor/amiga.cur) !important;
+  --line-color: rgba(0, 0, 0, 0.356);
+  --background-color: rgb(0, 92, 46);
+  --line-thickness: 1rem;
+  --non-line-thickness: 1rem;
+
+  background: repeating-linear-gradient(var(--line-color) 0 var(--line-thickness), transparent var(--line-thickness) calc(var(--line-thickness) + var(--non-line-thickness))), repeating-linear-gradient(to right, var(--line-color) 0 var(--line-thickness), transparent var(--line-thickness) calc(var(--line-thickness) + var(--non-line-thickness))), var(--background-color);
 }
 
 /* Globaler Reset & Hintergrund */
@@ -19,9 +24,6 @@
 
 body {
   color: var(--text);
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.519), rgba(0, 0, 0, 0.519)),
-    url("../images/background1.jpg") no-repeat center center fixed;
   background-size: cover;
   font-family: 'Pixel', sans-serif;
   min-height: 100vh;
@@ -280,4 +282,30 @@ body {
     #457a28 100%
   );
   text-align: center;
+}
+
+body {overflow-y: hidden;} /*Hides the scrollbar while loading.*/
+#loadingScreen {
+    position: fixed; /*Keeps the loading screen fixed on the screen */
+    inset: 0; /*Makes loading screen wrap full screen.*/
+    z-index: 999999; /*Makes loading screen stay on top.*/
+    user-select: none; /*Disables user interaction with loading screen.*/
+    transition: opacity 300ms; /*Adds a nice fading effect.*/
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7rem;
+}
+
+#loadingScreen::after {
+    content: '';
+    animation: loadingDots 1s linear infinite;
+}
+@keyframes loadingDots {
+    0%, 100% {content: '';}
+    25% {content: '.';}
+    50% {content: '..';}
+    75% {content: '...';}
 }
