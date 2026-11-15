@@ -15,6 +15,14 @@
 </head>
 <body>
 
+<div id="loadingScreen">Loading</div>
+<noscript>
+    <style>
+        #loadingScreen {display: none;}
+        body {overflow-y: auto;}
+    </style>
+</noscript>
+
 <header class="header-global">
     <h3>{NAME}</h3>
 </header>
@@ -83,5 +91,13 @@
 
 </div>
 <script src="../javascript/script.js"></script>
+<script defer>
+    window.addEventListener('load', function() {
+        var loadScreen = document.getElementById("loadingScreen");
+        loadScreen.style.opacity = "0";
+        document.body.style.overflowY = "auto";
+        setTimeout(function(){loadScreen.style.display = "none"}, 300);
+    });
+</script>
 </body>
 </html>

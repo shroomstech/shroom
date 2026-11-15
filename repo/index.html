@@ -13,6 +13,14 @@
 </head>
 <body>
 
+<div id="loadingScreen">Loading</div>
+<noscript>
+    <style>
+        #loadingScreen {display: none;}
+        body {overflow-y: auto;}
+    </style>
+</noscript>
+
 <!-- Header (Global CSS) -->
 <header class="header-global">
     <h4 class="webtitle"><a href="index.html">NimbusWeb</a></h4>
@@ -88,5 +96,13 @@
     }
 </style>
 <script src="../javascript/script.js"></script>
+<script defer>
+    window.addEventListener('load', function() {
+        var loadScreen = document.getElementById("loadingScreen");
+        loadScreen.style.opacity = "0";
+        document.body.style.overflowY = "auto";
+        setTimeout(function(){loadScreen.style.display = "none"}, 300);
+    });
+</script>
 </body>
 </html>
