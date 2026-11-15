@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SquareOS (Kelperus)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>■ SquareOS</h1>
+            <p class="codename">codename: Kelperus</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>What is SquareOS?</h2>
+                <p>
+                    SquareOS is an x86_64 operating system written from scratch in C.
+                    It does not use the Linux, Windows NT, or Darwin kernels. The goal
+                    is to be lightweight, approachable, and easy to understand.
+                </p>
+                <p>
+                    The project is built with AI assistance and identifies this
+                    workflow as <strong>Vibecoded OSDev (V-OSDev)</strong> —
+                    honest about what AI helped with and what actually works.
+                </p>
+            </section>
+
+            <section>
+                <h2>What works?</h2>
+                <ul>
+                    <li><strong>Kernel:</strong> GDT, TSS, IDT, syscall (int 0x80), Ring-3 usermode, 2 MB heap, ACPI, E1000</li>
+                    <li><strong>Shell:</strong> 30+ commands (help, fastfetch, tglgears, usrspacestart, gldemo, gears, ...)</li>
+                    <li><strong>SquareDE:</strong> Win95-style desktop with movable windows, start menu, taskbar</li>
+                    <li><strong>SquareGL:</strong> Minimal software OpenGL 1.x for the kernel</li>
+                    <li><strong>TinyGL:</strong> Full BoredOS TinyGL OpenGL 1.1 (z-buffer, lighting, textures) ported into the kernel</li>
+                    <li><strong>klibc:</strong> Freestanding C library (string, ctype, errno, stdlib, stdio, math, time, setjmp)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>What is planned?</h2>
+                <ul>
+                    <li>PMM / VMM — physical memory manager, per-process paging</li>
+                    <li>VFS + ramfs + /dev</li>
+                    <li>ELF loader + execve + userspace processes</li>
+                    <li>Threads (pthread, futex)</li>
+                    <li>AF_UNIX sockets + IPC</li>
+                    <li>Port BoredOS Nova compositor against klibc + SquareOS syscalls</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>How to build</h2>
+                <pre>git clone https://github.com/KelpOS-Project/SquareOS.git
+cd SquareOS
+make</pre>
+                <p>
+                    Requires: gcc, binutils, grub2-mkrescue, xorriso, qemu-system-x86.
+                    The kernel links to 290 KB and boots in QEMU via GRUB Multiboot v1.
+                </p>
+            </section>
+
+            <section>
+                <h2>Links</h2>
+                <p>
+                    <a href="https://github.com/KelpOS-Project/SquareOS">GitHub Repository</a> &middot;
+                    <a href="https://github.com/KelpOS-Project/SquareOS/blob/main/AI-POLICY.md">AI Policy</a> &middot;
+                    <a href="https://github.com/KelpOS-Project/SquareOS/blob/main/CONTRIBUTING.md">Contributing</a>
+                </p>
+            </section>
+
+            <section>
+                <h2>History</h2>
+                <p>
+                    Previously named TridentOS and KelpOS. The current codename is <strong>Kelperus</strong>.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 SquareOS Contributors &middot; V-OSDev</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

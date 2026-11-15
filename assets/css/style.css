@@ -21,7 +21,7 @@ body {
   color: var(--text);
   background:
     linear-gradient(rgba(0, 0, 0, 0.519), rgba(0, 0, 0, 0.519)),
-    url("../images/Turbines-By-GretagenZETA.png") no-repeat center center fixed;
+    url("../images/background1.jpg") no-repeat center center fixed;
   background-size: cover;
   font-family: 'Pixel', sans-serif;
   min-height: 100vh;
@@ -168,6 +168,7 @@ body {
 .badge-unstable { background: #3d0a0a; color: #ff8787; }
 .badge-pre { background: #2f753b; color: #51cf66; }
 .badge-no { background: grey; color: rgb(221, 221, 221);}
+.badge-nightly { background: #1b1b4d; color: #74c0fc; }
 
 .download-btn {
     display: inline-block;
